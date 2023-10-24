@@ -8,15 +8,15 @@ def run_game(rules, generate_question):
     print(rules)
     count = 0
     while count != 3:
-        question, result = generate_question()
+        question, res = generate_question()
         print(f"Question: {question}")
         answer = prompt.string("Your answer: ")
-        if answer == result:
+        if answer == res:
             count += 1
             print("Correct!")
             if count == 3:
                 print(f"Congratulations, {name}!")
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{res}'")
             print(f"Let's try again, {name}!")
             break

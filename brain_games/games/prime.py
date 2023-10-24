@@ -8,7 +8,7 @@ def generate_question():
     num = randint(1, 101)
     question = str(num)
     answer = "yes" if num > 1 else "no"
-    for i in range(2, (num//2)+1):
+    for i in range(2, (num // 2) + 1):
         if num % i == 0:
             answer = "no"
     return question, answer
