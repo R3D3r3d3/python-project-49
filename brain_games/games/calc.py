@@ -8,7 +8,7 @@ def generate_question():
     a, b = randint(0, 101), randint(0, 101)
     sign = choice(["+", "-", "*"])
     question = f"{a} {sign} {b}"
-    answer = eval(question)
+    answer = str(eval(question))
     return question, answer
 
 
